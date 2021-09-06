@@ -34,8 +34,7 @@ We added a distance form shoreline metrix by creating a map of the coastline and
 ### Exploring the Data
 
 Looking at the dataset, we are given pricing, geographical data, size of the property, the condition and the grade of the property. Preliminary analysis of the data seems to suggest that the location of the property is one of the strongest indicators for pricing, we're going to start and looking at what exactly is important about the location.
-
-![Avg%20sale%20price.png](attachment:Avg%20sale%20price.png)
+![image.png](img_01.png)
 
 Since this housing market is close to a body of water, we're looking at the relationship between the distance from the shoreline and the price. The scatterplot below plots the relationship we saw in the heatmap previously, that there is an increase in price for properties the closer they are to the shoreline.
 
