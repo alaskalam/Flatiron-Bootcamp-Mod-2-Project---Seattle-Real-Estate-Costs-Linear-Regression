@@ -38,21 +38,19 @@ Looking at the dataset, we are given pricing, geographical data, size of the pro
 
 Since this housing market is close to a body of water, we're looking at the relationship between the distance from the shoreline and the price. The scatterplot below plots the relationship we saw in the heatmap previously, that there is an increase in price for properties the closer they are to the shoreline.
 
-![dist%20shore%20price.png](attachment:dist%20shore%20price.png)
+![image.png](img_02.png)
 
 Now we're going to look at properties that have the waterfront label, this means that not only are they close to the water, but they are also facing the water as well. Waterfront facing properties on average have a higher value than their non waterfront facing neighbors. 
-
-![median%20price%20for%20waterfront.png](attachment:median%20price%20for%20waterfront.png)
+![image.png](img_03.png)
 
 As the size of the property increases, so to does the value of the property. This relationship is supported in both waterfont and non-waterfront properties. 
 
-![sqfootage%20price.png](attachment:sqfootage%20price.png)
+![image.png](img_04.png)
 
 ## The Model
 
 We ended up selecting the following features for our model due to their having the best results
-
-![corrplot.png](attachment:corrplot.png)
+![image.png](img_05.png)
 
 We decided it would be best to split our model up into two different groups, one group for houses over one million, and one group for houses under one million, since the model behaved slightly differently for the higher valued properties, and those looking to spend over a million on a home and those looking to spend under a million are going to be have different priorities for what is important. 
 
@@ -66,22 +64,20 @@ As age, square footage or grade, increase, so too does the value.
 Waterfront facing or renovated properties have a higher value than each of their counterparts.
 Properties that are further than .25 miles away from a shoreline have a lower value than those that are closer.
 
-![under1mil.PNG](attachment:under1mil.PNG)
+![image.png](img_06.png)
 
 The QQ plot seems to be very linear, with very minor deviation at the tails. 
 
-![qqplot%20under%201mil.png](attachment:qqplot%20under%201mil.png)
+![image.png](img_07.png)
 
 ### Over One Million
 The model for homes over one million has an almost identical relationship as the model for the homes under one million, with the difference being in the values of the coefficients and the R-Squared values. 
 
 The R-Squared and Adjusted R-Squared values are .924 and .923, which are very respectable values. This supports that our model is fitting to the data.
-
-![over1mil.PNG](attachment:over1mil.PNG)
+![image.png](img_08.png)
 
 The QQ plot for these homes is a bit worse than the one for homes under one million, however the deviation is largely concentrated at the tails. This does suggest that there might be some outliers that weren't removed or accounted for in this model. 
-
-![qqplot%20over%201mil.png](attachment:qqplot%20over%201mil.png)
+![image.png](img_09.png)
 
 ## Conclusions
 
